@@ -1,13 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/google.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Google</title>
+
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="/" class="header__link">Gmail</a>
+        <a href="/" class="header__link">Зображення</a>
+      </nav>
+
+      <div class="header__buttons-wrap">
+        <button type="button">
+          <img
+            src="./src/images/icons/menu.svg"
+            alt="menu"
+            class="header__btn-menu"
+          />
+        </button>
+        <button type="button" class="header__btn-signin">Увійти</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__content">
+        <img
+          src="./src/images/google_logo.png"
+          alt="Google logo"
+          class="main__logo"
+        />
+
+        <div class="main__input-wrap">
+          <input type="search" name="search" id="search" class="main__input" />
+
+          <img
+            src="./src/images/icons/search.svg"
+            alt="search icon"
+            class="main__icon main__icon-search"
+          />
+
+          <div class="main__icons-wrap">
+            <button type="button">
+              <img
+                src="./src/images/icons/keyboard.svg"
+                alt="keyboard icon"
+                class="main__icon"
+              />
+            </button>
+            <button type="button">
+              <img
+                src="./src/images/icons/mic.svg"
+                alt="microphone icon"
+                class="main__icon"
+              />
+            </button>
+            <button type="button">
+              <img
+                src="./src/images/icons/camera.svg"
+                alt="camera icon"
+                class="main__icon"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="main__buttons-wrap">
+          <button type="button" class="main__button">Пошук Google</button>
+          <button type="button" class="main__button" id="happy_btn">
+            Мені пощастить
+          </button>
+        </div>
+
+        <div class="main__lang-wrap">
+          <p class="main__text">Мова Google:</p>
+          <a href="/" class="main__lang-link">English</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div style="padding-inline: 30px; padding-bottom: 16px">
+        <p>Україна</p>
+      </div>
+
+      <div class="footer__links-wrap">
+        <div style="padding-left: 30px">
+          <ul class="footer__nav-list">
+            <li>
+              <a href="">Про Google</a>
+            </li>
+            <li>
+              <a href="">Реклама</a>
+            </li>
+            <li>
+              <a href="">Для бізнесу</a>
+            </li>
+            <li>
+              <a href="">Як працює пошук</a>
+            </li>
+          </ul>
+        </div>
+
+        <div style="padding-right: 30px">
+          <ul class="footer__nav-list">
+            <li>
+              <a href="">Конфіденційність</a>
+            </li>
+            <li>
+              <a href="">Умови</a>
+            </li>
+            <li>
+              <a href="">Налаштування</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
